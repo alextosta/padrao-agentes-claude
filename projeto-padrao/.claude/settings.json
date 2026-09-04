@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(./mvnw:*)",
+      "Bash(mvn:*)",
+      "Bash(npm run:*)",
+      "Bash(npx ng:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(glab issue list:*)",
+      "Bash(glab issue view:*)",
+      "Bash(glab mr list:*)",
+      "Bash(glab mr view:*)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(glab issue create:*)",
+      "Bash(glab mr create:*)",
+      "Bash(./mvnw flyway:migrate:*)"
+    ],
+    "deny": [
+      "Read(./**/.env)",
+      "Read(./**/application-prd.yml)",
+      "Read(./**/*.p12)",
+      "Read(./**/*.jks)",
+      "Bash(git push --force:*)",
+      "Bash(sqlplus:*)"
+    ]
+  }
+}
